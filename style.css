@@ -1,1 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0 2%;
+    background-color: #aaa;
+    height: 10vh;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 80vh;
+}
+
+main aside {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: #aaa;
+    height: 10vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.gallery {
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 150px);
+    /* o auto-fit, completa a quantidade de caixas que cabem na coluna, e ao lado foi passado a dimensão em px.
+     Ele tem a mesma função do flex wrap, que é quebrar a tela de forma responsiva.*/
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    border: solid black;
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+}
+
+/* obs, o header esta com 10vh a main 80vh e o footer 10vh. E assim ficou cada um no seu lugar.
+Tem um erro, os cards estão ultrapassando o footer, porém não aprendemos sobre responsividade,
+e ficou como desafio para quando aprendermos./*
